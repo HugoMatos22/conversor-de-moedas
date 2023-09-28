@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,500;1,700&family=Oswald:wght@200;400;500&family=Roboto:wght@400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none; /*Tira a cor da linha num select ou onde tem que escolher algo*/
+}
+
+body{
+    background-color: rgba(138, 81, 252, 1);
+}
+
+/*Quando quiser centralizar algo no meio da tela, 
+basta colocar margin left/rigth auto, 
+porém precisa-se que o elemento seja display block*/
+.logo{
+    width: 200px;
+    height: 200px;
+    margin: 10px auto; 
+    display: block;
+}
+main{
+    width: 375px;
+    border-radius: 20px;
+    background-color: rgba(244, 244, 244, 1);
+    margin: 0 auto;
+    padding: 44px 24px 23px;
+    margin-bottom: 20px;
+}
+
+label{
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+select, input{
+    background-color: #ffffff;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none; /*tira a seta visual do select*/
+    padding-left: 15px;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(85, 85, 85, 1);
+    cursor: pointer;
+}
+
+
+button{
+    background-color: rgba(119, 47, 211, 1);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    width: 327px;
+    height: 48px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+button:hover{
+    opacity: .8;
+}
+
+button:active{
+    opacity: .6;
+}
+
+section{
+    border: 1px solid rgba(119, 47, 211, 1);
+    border-radius: 5px;
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.arrow{
+    margin: 15px 0;
+}
+.currency-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+.currency{
+    color:rgba(119, 119, 119, 1);
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.currency-value, .currency-value-convert{
+    color:rgba(85, 85, 85, 1);
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 700;
+}
